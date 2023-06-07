@@ -1,0 +1,179 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    height: 15vh;
+    width: 98.5vw;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  color: #b159ff;
+}
+.nav-left > a {
+  color: #b159ff;
+  text-decoration: none;
+}
+.nav-left > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-left > img {
+  width: 3.5rem;
+  margin: 0rem 1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right > a {
+  margin: 0rem 1.5rem;
+  color: #b159ff;
+  text-decoration: none;
+}
+.nav-right > a >h3:hover{
+  color: #ffffff;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards > a{
+  text-decoration: none;
+  color: black;
+}
+
+.card-item{
+  display: flex;
+  height: 40vh;
+  width: 90vw;
+  margin: 2vw;
+  border: 2px solid black;
+  align-items: center;
+  padding-left: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-item:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+.card-item>img{
+  height: 25vh;
+  width: 10vw;
+}
+.card-items-below{
+  padding: 1rem 2rem;
+}
+
+.card-items-below > h2,h4,h5,p{
+  padding: .3rem 0rem;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.center > h1{
+  margin-top: 1.5rem;
+  text-decoration: underline;
+}
+
+form{
+  width: 30vw;
+  margin: 1rem;
+}
+.form{
+  margin: .5rem 0rem;
+}
+.form>input{
+  width: 30vw;
+  height: 5vh;
+  margin: .5rem 0rem;
+  padding: .5rem;
+}
+
+.middle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.middle > button {
+  background-color: rgba(0, 0, 0, 0.911);
+  color: #b159ff;
+  height: 6vh;
+  width: 10vw;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.middle > button:hover {
+  background-color:#b159ff ;
+  color: rgba(0, 0, 0, 0.911);
+  height: 6vh;
+  width: 10vw;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .card-items-below > h2, h4, h5, p {
+    padding: 0rem 0rem;
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 15vh;
+    width: 32rem;
+  }
+  .nav-left > a> h3 {
+    display: none;
+  }
+  .nav-right > a> h3 {
+    padding-right: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .cards{
+    width: 159vw;
+  }
+  .card-item{
+    width: 128vw;
+  }
+  .card-item>img {
+    height: 24vh;
+    width: 25vw;
+  }
+  .card-items-below > h2, h4, h5, p {
+    padding: 0.3rem 0rem;
+    font-size: .5rem;
+  }
+}
+
+
+
+
+
+
+
